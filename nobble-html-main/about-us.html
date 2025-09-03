@@ -55,63 +55,31 @@
 
 <body>
     <!-- screen loader -->
-    <div class="screen_loader fixed inset-0 z-[60] grid place-content-center bg-[#fafafa] dark:bg-[#060818]">
+    <div class="screen_loader fixed inset-0 z-[60] grid place-content-center bg-[#fafafa] dark:bg-[#060818] bg_move">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-                <circle cx="50" cy="50" r="0" fill="none" stroke="#6C54FF" stroke-width="4">
-                    <animate
-                        attributeName="r"
-                        repeatCount="indefinite"
-                        dur="1s"
-                        values="0;16"
-                        keyTimes="0;1"
-                        keySplines="0 0.2 0.8 1"
-                        calcMode="spline"
-                        begin="0s"
-                    ></animate>
-                    <animate
-                        attributeName="opacity"
-                        repeatCount="indefinite"
-                        dur="1s"
-                        values="1;0"
-                        keyTimes="0;1"
-                        keySplines="0.2 0 0.8 1"
-                        calcMode="spline"
-                        begin="0s"
-                    ></animate>
-                </circle>
-                <circle cx="50" cy="50" r="0" fill="none" stroke="#1A1036" stroke-width="4">
-                    <animate
-                        attributeName="r"
-                        repeatCount="indefinite"
-                        dur="1s"
-                        values="0;16"
-                        keyTimes="0;1"
-                        keySplines="0 0.2 0.8 1"
-                        calcMode="spline"
-                        begin="-0.5s"
-                    ></animate>
-                    <animate
-                        attributeName="opacity"
-                        repeatCount="indefinite"
-                        dur="1s"
-                        values="1;0"
-                        keyTimes="0;1"
-                        keySplines="0.2 0 0.8 1"
-                        calcMode="spline"
-                        begin="-0.5s"
-                    ></animate>
-                </circle>
-            </svg>
+            <circle cx="50" cy="50" r="0" fill="none" stroke="#6C54FF" stroke-width="4">
+                <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;16" keyTimes="0;1"
+                    keySplines="0 0.2 0.8 1" calcMode="spline" begin="0s"></animate>
+                <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0" keyTimes="0;1"
+                    keySplines="0.2 0 0.8 1" calcMode="spline" begin="0s"></animate>
+            </circle>
+            <circle cx="50" cy="50" r="0" fill="none" stroke="#1A1036" stroke-width="4">
+                <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;16" keyTimes="0;1"
+                    keySplines="0 0.2 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+                <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0" keyTimes="0;1"
+                    keySplines="0.2 0 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+            </circle>
+        </svg>
     </div>
 
-    <div class="flex min-h-screen flex-col bg-white font-jakarta text-lg font-normal text-purple-500 antialiased dark:bg-secondary">
+    <div class="flex min-h-screen flex-col bg-white font-jakarta text-lg font-normal text-purple-500 antialiased dark:bg-secondary bg_move">
         <img src="assets/images/top-right-curv.svg" alt="" class="absolute right-0 top-0 hidden lg:block" data-aos="fade-down" data-aos-duration="2000" />
         <!-- Header -->
-        <header id="header" class="fixed top-6 z-50 w-full duration-300">
-            <div class="container">
-                <div class="header-main flex items-center rounded-lg bg-[#F8F7FF] px-4 py-3 duration-300 dark:bg-purple-800 lg:px-6 lg:py-0">
+        <header id="header" class="fixed top-6 z-50 w-full duration-300 bg_move">
+            <div class="container bg_move">
+                <div class="header-main flex items-center rounded-lg bg-[#F8F7FF] px-4 py-3 duration-300 dark:bg-purple-800 lg:px-6 lg:py-0 bg_move">
                     <a href="index.html" class="w-24 shrink-0 sm:w-28 lg:w-[133px]">
-                        <img src="assets/images/image-removebg-preview.png" alt="" class="inline-flex w-full dark:hidden" />
+                        <img src="assets/images/logo ghait event_page-0001.png" width="90%" height="90%" alt="" class="inline-flex w-full dark:hidden" />
                         <img src="assets/images/logo-dark.svg" alt="" class="hidden w-full dark:inline-flex" />
                     </a>
                     <div class="ms-auto flex items-center gap-10">
@@ -127,22 +95,26 @@
                                 </button>
                             <ul class="group inline-flex h-full w-full flex-col items-center gap-8 gap-y-10 overflow-y-auto bg-secondary px-5 pb-10 pt-24 text-22 font-semibold text-white sm:text-3xl lg:w-auto lg:flex-row lg:overflow-y-visible lg:bg-transparent lg:p-0 lg:text-lg lg:text-purple-600 dark:lg:text-purple-500 xl:gap-10">
                                 <li>
-                                    <a href="index.html" class="nav-link">Home</a>
+                                    <a href="index.html" class="nav-link ">Home</a>
                                 </li>
                                 <li>
                                     <a href="service-list.html" class="nav-link">Services</a>
                                 </li>
                                 <li>
+                                    <a href="blog-list.html" class="nav-link">Galerie</a>
+                                </li>
+                                <li>
                                     <a href="blog-list.html" class="nav-link">Blogs</a>
                                 </li>
+
                                 <li>
                                     <a href="portfolio-list.html" class="nav-link">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a href="career.html" class="nav-link">Career</a>
+                                    <a href="career.html" class="nav-link active">About us</a>
                                 </li>
                                 <li class="inline-block lg:hidden">
-                                    <a href="contact-us.html" class="nav-link">Contact us</a>
+                                    <a href="contact-us.html" class="nav-link">Demander un devis</a>
                                 </li>
                             </ul>
                         </div>
@@ -205,7 +177,7 @@
                                         </span>
                                     </div>
                                 </label>
-                            <a href="contact-us.html" class="btn hidden shrink-0 lg:inline-flex">Contact us</a>
+                            <a href="contact-us.html" class="btn hidden shrink-0 lg:inline-flex">Demander un devis</a>
                             <button type="button" onclick="toggleMenu()" class="inline-block space-y-1 lg:hidden">
                                     <span class="flex h-0.5 w-7 rounded-full bg-primary"></span>
                                     <span class="flex h-0.5 w-7 rounded-full bg-primary"></span>
@@ -245,33 +217,24 @@
                         </div>
                         <div class="relative text-center ltr:lg:text-left rtl:lg:text-right 2xl:pe-44">
                             <span class="absolute end-0 top-0 hidden rtl:rotate-y-180 lg:inline-block">
-                    <img
-                        src="assets/images/design-arrow-dark.svg"
-                        alt=""
-                        class="inline-flex dark:hidden"
-                        data-aos="zoom-in"
-                        data-aos-duration="2000"
-                    />
-                    <img
-                        src="assets/images/design-arrow-light.svg"
-                        alt=""
-                        class="hidden dark:inline-flex"
-                        data-aos="zoom-in"
-                        data-aos-duration="2000"
-                    />
-                </span>
+                                <img src="assets/images/design-arrow-dark.svg" alt="" class="inline-flex dark:hidden"
+                                    data-aos="zoom-in" data-aos-duration="2000" />
+                                <img src="assets/images/design-arrow-light.svg" alt="" class="hidden dark:inline-flex"
+                                    data-aos="zoom-in" data-aos-duration="2000" />
+                            </span>
                             <span class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-secondary rtl:rotate-y-180 dark:bg-purple-900">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path d="..." fill="white" />
-                    </svg>
-                </span>
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="..." fill="white" />
+                                </svg>
+                            </span>
                             <div class="pt-12 text-purple-700 dark:text-white">
                                 <p class="xl:text-22">
                                     "Nous croyons que la réussite d’une organisation passe par l’épanouissement des individus qui la composent."
                                 </p>
                                 <div class="pt-8">
                                     <span class="font-bold">– Équipe GHAITI EVENT</span>
-                                    <span class="font-medium text-purple-600">Cabinet de formation, conseil & événementiel</span>
+                                    <span class="font-medium text-purple-600">Cabinet de formation, conseil &
+                                        événementiel</span>
                                 </div>
                                 <div class="flex flex-wrap justify-center gap-4 pt-10 md:gap-10 lg:justify-start xl:pt-20">
                                     <div class="min-w-[120px] space-y-2 bg-green/[0.16] px-3 py-3.5 text-center text-green">
@@ -300,10 +263,11 @@
                         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:gap-7">
                             <div class="rounded-2xl border-2 border-[#9199B5]/[0.12] px-4 py-8 shadow-[0_0_80px_rgba(119,128,161,0.1)] dark:bg-purple-900 dark:shadow-none xl:p-8">
                                 <span class="inline-flex pb-8">
-                        <img src="assets/images/formation_about_us.jpg" alt="Formation professionnelle" />
-                    </span>
+                                    <img src="assets/images/formation_about_us.jpg" alt="Formation professionnelle" />
+                                </span>
                                 <div class="pb-8 leading-normal xl:text-xl">
-                                    <h4 class="pb-4 font-semibold text-purple-700 dark:text-white">Formation professionnelle</h4>
+                                    <h4 class="pb-4 font-semibold text-purple-700 dark:text-white">Formation professionnelle
+                                    </h4>
                                     <p>
                                         Des sessions interactives et pratiques pour renforcer les compétences clés de vos équipes et améliorer leur performance au quotidien.
                                     </p>
@@ -311,10 +275,11 @@
                             </div>
                             <div class="rounded-2xl border-2 border-[#9199B5]/[0.12] px-4 py-8 shadow-[0_0_80px_rgba(119,128,161,0.1)] dark:bg-purple-900 dark:shadow-none xl:p-8">
                                 <span class="inline-flex pb-8">
-                        <img src="assets/images/iStock-951510764.webp" alt="Coaching" />
-                    </span>
+                                    <img src="assets/images/iStock-951510764.webp" alt="Coaching" />
+                                </span>
                                 <div class="pb-8 leading-normal xl:text-xl">
-                                    <h4 class="pb-4 font-semibold text-purple-700 dark:text-white">Coaching & Conseil</h4>
+                                    <h4 class="pb-4 font-semibold text-purple-700 dark:text-white">Coaching & Conseil
+                                    </h4>
                                     <p>
                                         Un accompagnement sur mesure en leadership, RSE et audit social pour stimuler la performance individuelle et collective.
                                     </p>
@@ -322,10 +287,12 @@
                             </div>
                             <div class="rounded-2xl border-2 border-[#9199B5]/[0.12] px-4 py-8 shadow-[0_0_80px_rgba(119,128,161,0.1)] dark:bg-purple-900 dark:shadow-none xl:p-8">
                                 <span class="inline-flex pb-8">
-                        <img src="assets/images/successful-team-building-activities-1619658988-2674-800-39f7e6fb7.webp" alt="Team building" />
-                    </span>
+                                    <img src="assets/images/successful-team-building-activities-1619658988-2674-800-39f7e6fb7.webp"
+                                        alt="Team building" />
+                                </span>
                                 <div class="pb-8 leading-normal xl:text-xl">
-                                    <h4 class="pb-4 font-semibold text-purple-700 dark:text-white">Événementiel & Team Building</h4>
+                                    <h4 class="pb-4 font-semibold text-purple-700 dark:text-white">Événementiel & Team Building
+                                    </h4>
                                     <p>
                                         Des événements fédérateurs et créatifs pour renforcer la cohésion d’équipe et promouvoir vos valeurs d’entreprise.
                                     </p>
@@ -336,162 +303,23 @@
                 </div>
             </div>
 
-            <div class="rounded-3xl bg-secondary px-4 pb-16 pt-12 text-center text-purple-400 lg:pb-20">
-                <div class="relative mx-auto pb-10 text-center lg:w-5/12 lg:pb-20">
-                    <img src="assets/images/yellow-star-plan.svg" alt="" class="absolute start-0 lg:-start-20 lg:top-14" />
-                    <img src="assets/images/green-star.svg" alt="" class="absolute end-0 top-0 lg:-end-20" />
-                    <h4 class="mb-5 text-[26px] font-bold text-white">Our achievement</h4>
-                    <p class="text-lg md:text-xl">
-                        Find a team of digital marketers you can rely on. Every day, we build trust through communication, transparency, and results.
-                    </p>
-                </div>
-                <div class="mx-auto max-w-[1110px]">
-                    <div class="swiper achievement-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <h2 class="text-[26px] font-bold leading-tight text-white">2005</h2>
-                                <span class="inline-flex py-4">
-                                                <svg width="68" height="13" viewBox="0 0 68 13" fill="none">
-                                                    <path
-                                                        d="M1.5 9.42115C2.1339 9.19115 2.93393 9.80168 3.53906 9.97827C4.27529 10.1931 4.95587 10.5254 5.69652 10.7686C6.11157 10.9048 6.18473 11.0536 6.65685 11.0536C7.11159 11.0536 7.42211 11.2868 7.86713 11.2868C8.71511 11.2868 9.52964 11.4034 10.3732 11.4034C11.6129 11.4034 12.696 10.9031 13.8528 10.5613C14.9078 10.2496 16.0182 9.85082 17.1153 9.65436C18.1576 9.46772 19.119 8.87036 20.141 8.57901C22.0507 8.03454 23.8491 6.86862 25.528 5.8647C26.6188 5.21247 27.1922 4.48815 27.1922 3.24109C27.1922 2.16964 26.1154 1.95843 25.2715 1.95843C24.006 1.95843 23.1587 1.99726 22.1471 2.84592C21.7825 3.15185 21.0315 3.57016 20.7987 3.99254C20.5227 4.49339 20.3072 5.02029 20.0883 5.54728C19.7534 6.35366 19.4964 7.1771 19.4964 8.0802C19.4964 8.84445 19.9171 9.3215 20.2594 9.9394C21.1475 11.543 23.2144 11.9865 24.9163 11.9865C25.9897 11.9865 27.0659 12.0649 28.113 11.8439C29.1926 11.6161 30.3527 11.3626 31.3887 10.9953C32.5733 10.5753 33.8669 10.402 35.0064 9.86166C36.2003 9.29551 37.4706 9.04069 38.5583 8.26158C40.0402 7.20012 42.2286 6.03601 42.2286 4.0055C42.2286 3.01812 42.295 2.0952 41.6366 1.28471C41.3409 0.920675 40.5818 0.995655 40.1567 1.03207C39.5249 1.08617 39.3691 1.71714 39.1437 2.19812C38.7031 3.13821 38.7951 4.26996 38.7951 5.28815C38.7951 6.21384 38.9954 6.98921 39.2424 7.84051C39.5858 9.02436 40.1899 9.3689 41.1038 10.069C42.2351 10.9355 43.1764 10.7785 44.5045 11.1054C45.8642 11.4402 46.8454 11.52 48.2471 11.52C49.863 11.52 51.4789 11.52 53.0948 11.52C55.5694 11.52 58.2298 11.3557 60.4157 10.043C61.6097 9.32602 62.8159 8.67381 64.0663 8.04781C64.8436 7.65863 65.8712 7.35848 66.5 6.73924"
-                                                        stroke="#3C3454"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                    />
-                                                </svg>
-                                            </span>
-                                <div class="relative mb-6 flex justify-center">
-                                    <span class="relative z-1 inline-block h-11 w-4 rounded-full bg-blue"></span>
-                                    <span class="absolute left-0 top-1/2 inline-block h-2 w-full -translate-y-1/2 bg-purple-700"></span>
-                                </div>
-                                <h2 class="pb-10 text-[26px] font-bold leading-tight text-blue">We Started</h2>
-                                <p class="line-clamp-3 sm:px-4">
-                                    We started journey with two potential person and decided to one mission, Empowering Your Online Presence
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h2 class="text-[26px] font-bold leading-tight text-white">2010</h2>
-                                <span class="inline-flex py-4">
-                                                <svg width="68" height="13" viewBox="0 0 68 13" fill="none">
-                                                    <path
-                                                        d="M1.5 9.42115C2.1339 9.19115 2.93393 9.80168 3.53906 9.97827C4.27529 10.1931 4.95587 10.5254 5.69652 10.7686C6.11157 10.9048 6.18473 11.0536 6.65685 11.0536C7.11159 11.0536 7.42211 11.2868 7.86713 11.2868C8.71511 11.2868 9.52964 11.4034 10.3732 11.4034C11.6129 11.4034 12.696 10.9031 13.8528 10.5613C14.9078 10.2496 16.0182 9.85082 17.1153 9.65436C18.1576 9.46772 19.119 8.87036 20.141 8.57901C22.0507 8.03454 23.8491 6.86862 25.528 5.8647C26.6188 5.21247 27.1922 4.48815 27.1922 3.24109C27.1922 2.16964 26.1154 1.95843 25.2715 1.95843C24.006 1.95843 23.1587 1.99726 22.1471 2.84592C21.7825 3.15185 21.0315 3.57016 20.7987 3.99254C20.5227 4.49339 20.3072 5.02029 20.0883 5.54728C19.7534 6.35366 19.4964 7.1771 19.4964 8.0802C19.4964 8.84445 19.9171 9.3215 20.2594 9.9394C21.1475 11.543 23.2144 11.9865 24.9163 11.9865C25.9897 11.9865 27.0659 12.0649 28.113 11.8439C29.1926 11.6161 30.3527 11.3626 31.3887 10.9953C32.5733 10.5753 33.8669 10.402 35.0064 9.86166C36.2003 9.29551 37.4706 9.04069 38.5583 8.26158C40.0402 7.20012 42.2286 6.03601 42.2286 4.0055C42.2286 3.01812 42.295 2.0952 41.6366 1.28471C41.3409 0.920675 40.5818 0.995655 40.1567 1.03207C39.5249 1.08617 39.3691 1.71714 39.1437 2.19812C38.7031 3.13821 38.7951 4.26996 38.7951 5.28815C38.7951 6.21384 38.9954 6.98921 39.2424 7.84051C39.5858 9.02436 40.1899 9.3689 41.1038 10.069C42.2351 10.9355 43.1764 10.7785 44.5045 11.1054C45.8642 11.4402 46.8454 11.52 48.2471 11.52C49.863 11.52 51.4789 11.52 53.0948 11.52C55.5694 11.52 58.2298 11.3557 60.4157 10.043C61.6097 9.32602 62.8159 8.67381 64.0663 8.04781C64.8436 7.65863 65.8712 7.35848 66.5 6.73924"
-                                                        stroke="#3C3454"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                    />
-                                                </svg>
-                                            </span>
-                                <div class="relative mb-6 flex justify-center">
-                                    <span class="relative z-1 inline-block h-11 w-4 rounded-full bg-red"></span>
-                                    <span class="absolute left-0 top-1/2 inline-block h-2 w-full -translate-y-1/2 bg-purple-700"></span>
-                                </div>
-                                <h2 class="pb-10 text-[26px] font-bold leading-tight text-red">Link building</h2>
-                                <p class="line-clamp-3 sm:px-4">
-                                    We started journey with two potential person and decided to one mission, Empowering Your Online Presence
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h2 class="text-[26px] font-bold leading-tight text-white">2012</h2>
-                                <span class="inline-flex py-4">
-                                                <svg width="68" height="13" viewBox="0 0 68 13" fill="none">
-                                                    <path
-                                                        d="M1.5 9.42115C2.1339 9.19115 2.93393 9.80168 3.53906 9.97827C4.27529 10.1931 4.95587 10.5254 5.69652 10.7686C6.11157 10.9048 6.18473 11.0536 6.65685 11.0536C7.11159 11.0536 7.42211 11.2868 7.86713 11.2868C8.71511 11.2868 9.52964 11.4034 10.3732 11.4034C11.6129 11.4034 12.696 10.9031 13.8528 10.5613C14.9078 10.2496 16.0182 9.85082 17.1153 9.65436C18.1576 9.46772 19.119 8.87036 20.141 8.57901C22.0507 8.03454 23.8491 6.86862 25.528 5.8647C26.6188 5.21247 27.1922 4.48815 27.1922 3.24109C27.1922 2.16964 26.1154 1.95843 25.2715 1.95843C24.006 1.95843 23.1587 1.99726 22.1471 2.84592C21.7825 3.15185 21.0315 3.57016 20.7987 3.99254C20.5227 4.49339 20.3072 5.02029 20.0883 5.54728C19.7534 6.35366 19.4964 7.1771 19.4964 8.0802C19.4964 8.84445 19.9171 9.3215 20.2594 9.9394C21.1475 11.543 23.2144 11.9865 24.9163 11.9865C25.9897 11.9865 27.0659 12.0649 28.113 11.8439C29.1926 11.6161 30.3527 11.3626 31.3887 10.9953C32.5733 10.5753 33.8669 10.402 35.0064 9.86166C36.2003 9.29551 37.4706 9.04069 38.5583 8.26158C40.0402 7.20012 42.2286 6.03601 42.2286 4.0055C42.2286 3.01812 42.295 2.0952 41.6366 1.28471C41.3409 0.920675 40.5818 0.995655 40.1567 1.03207C39.5249 1.08617 39.3691 1.71714 39.1437 2.19812C38.7031 3.13821 38.7951 4.26996 38.7951 5.28815C38.7951 6.21384 38.9954 6.98921 39.2424 7.84051C39.5858 9.02436 40.1899 9.3689 41.1038 10.069C42.2351 10.9355 43.1764 10.7785 44.5045 11.1054C45.8642 11.4402 46.8454 11.52 48.2471 11.52C49.863 11.52 51.4789 11.52 53.0948 11.52C55.5694 11.52 58.2298 11.3557 60.4157 10.043C61.6097 9.32602 62.8159 8.67381 64.0663 8.04781C64.8436 7.65863 65.8712 7.35848 66.5 6.73924"
-                                                        stroke="#3C3454"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                    />
-                                                </svg>
-                                            </span>
-                                <div class="relative mb-6 flex justify-center">
-                                    <span class="relative z-1 inline-block h-11 w-4 rounded-full bg-yellow"></span>
-                                    <span class="absolute left-0 top-1/2 inline-block h-2 w-full -translate-y-1/2 bg-purple-700"></span>
-                                </div>
-                                <h2 class="pb-10 text-[26px] font-bold leading-tight text-yellow">3M users</h2>
-                                <p class="line-clamp-3 sm:px-4">
-                                    We started journey with two potential person and decided to one mission, Empowering Your Online Presence
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h2 class="text-[26px] font-bold leading-tight text-white">2015</h2>
-                                <span class="inline-flex py-4">
-                                                <svg width="68" height="13" viewBox="0 0 68 13" fill="none">
-                                                    <path
-                                                        d="M1.5 9.42115C2.1339 9.19115 2.93393 9.80168 3.53906 9.97827C4.27529 10.1931 4.95587 10.5254 5.69652 10.7686C6.11157 10.9048 6.18473 11.0536 6.65685 11.0536C7.11159 11.0536 7.42211 11.2868 7.86713 11.2868C8.71511 11.2868 9.52964 11.4034 10.3732 11.4034C11.6129 11.4034 12.696 10.9031 13.8528 10.5613C14.9078 10.2496 16.0182 9.85082 17.1153 9.65436C18.1576 9.46772 19.119 8.87036 20.141 8.57901C22.0507 8.03454 23.8491 6.86862 25.528 5.8647C26.6188 5.21247 27.1922 4.48815 27.1922 3.24109C27.1922 2.16964 26.1154 1.95843 25.2715 1.95843C24.006 1.95843 23.1587 1.99726 22.1471 2.84592C21.7825 3.15185 21.0315 3.57016 20.7987 3.99254C20.5227 4.49339 20.3072 5.02029 20.0883 5.54728C19.7534 6.35366 19.4964 7.1771 19.4964 8.0802C19.4964 8.84445 19.9171 9.3215 20.2594 9.9394C21.1475 11.543 23.2144 11.9865 24.9163 11.9865C25.9897 11.9865 27.0659 12.0649 28.113 11.8439C29.1926 11.6161 30.3527 11.3626 31.3887 10.9953C32.5733 10.5753 33.8669 10.402 35.0064 9.86166C36.2003 9.29551 37.4706 9.04069 38.5583 8.26158C40.0402 7.20012 42.2286 6.03601 42.2286 4.0055C42.2286 3.01812 42.295 2.0952 41.6366 1.28471C41.3409 0.920675 40.5818 0.995655 40.1567 1.03207C39.5249 1.08617 39.3691 1.71714 39.1437 2.19812C38.7031 3.13821 38.7951 4.26996 38.7951 5.28815C38.7951 6.21384 38.9954 6.98921 39.2424 7.84051C39.5858 9.02436 40.1899 9.3689 41.1038 10.069C42.2351 10.9355 43.1764 10.7785 44.5045 11.1054C45.8642 11.4402 46.8454 11.52 48.2471 11.52C49.863 11.52 51.4789 11.52 53.0948 11.52C55.5694 11.52 58.2298 11.3557 60.4157 10.043C61.6097 9.32602 62.8159 8.67381 64.0663 8.04781C64.8436 7.65863 65.8712 7.35848 66.5 6.73924"
-                                                        stroke="#3C3454"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                    />
-                                                </svg>
-                                            </span>
-                                <div class="relative mb-6 flex justify-center">
-                                    <span class="relative z-1 inline-block h-11 w-4 rounded-full bg-blue"></span>
-                                    <span class="absolute left-0 top-1/2 inline-block h-2 w-full -translate-y-1/2 bg-purple-700"></span>
-                                </div>
-                                <h2 class="pb-10 text-[26px] font-bold leading-tight text-blue">We Started</h2>
-                                <p class="line-clamp-3 sm:px-4">
-                                    We started journey with two potential person and decided to one mission, Empowering Your Online Presence
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h2 class="text-[26px] font-bold leading-tight text-white">2020</h2>
-                                <span class="inline-flex py-4">
-                                                <svg width="68" height="13" viewBox="0 0 68 13" fill="none">
-                                                    <path
-                                                        d="M1.5 9.42115C2.1339 9.19115 2.93393 9.80168 3.53906 9.97827C4.27529 10.1931 4.95587 10.5254 5.69652 10.7686C6.11157 10.9048 6.18473 11.0536 6.65685 11.0536C7.11159 11.0536 7.42211 11.2868 7.86713 11.2868C8.71511 11.2868 9.52964 11.4034 10.3732 11.4034C11.6129 11.4034 12.696 10.9031 13.8528 10.5613C14.9078 10.2496 16.0182 9.85082 17.1153 9.65436C18.1576 9.46772 19.119 8.87036 20.141 8.57901C22.0507 8.03454 23.8491 6.86862 25.528 5.8647C26.6188 5.21247 27.1922 4.48815 27.1922 3.24109C27.1922 2.16964 26.1154 1.95843 25.2715 1.95843C24.006 1.95843 23.1587 1.99726 22.1471 2.84592C21.7825 3.15185 21.0315 3.57016 20.7987 3.99254C20.5227 4.49339 20.3072 5.02029 20.0883 5.54728C19.7534 6.35366 19.4964 7.1771 19.4964 8.0802C19.4964 8.84445 19.9171 9.3215 20.2594 9.9394C21.1475 11.543 23.2144 11.9865 24.9163 11.9865C25.9897 11.9865 27.0659 12.0649 28.113 11.8439C29.1926 11.6161 30.3527 11.3626 31.3887 10.9953C32.5733 10.5753 33.8669 10.402 35.0064 9.86166C36.2003 9.29551 37.4706 9.04069 38.5583 8.26158C40.0402 7.20012 42.2286 6.03601 42.2286 4.0055C42.2286 3.01812 42.295 2.0952 41.6366 1.28471C41.3409 0.920675 40.5818 0.995655 40.1567 1.03207C39.5249 1.08617 39.3691 1.71714 39.1437 2.19812C38.7031 3.13821 38.7951 4.26996 38.7951 5.28815C38.7951 6.21384 38.9954 6.98921 39.2424 7.84051C39.5858 9.02436 40.1899 9.3689 41.1038 10.069C42.2351 10.9355 43.1764 10.7785 44.5045 11.1054C45.8642 11.4402 46.8454 11.52 48.2471 11.52C49.863 11.52 51.4789 11.52 53.0948 11.52C55.5694 11.52 58.2298 11.3557 60.4157 10.043C61.6097 9.32602 62.8159 8.67381 64.0663 8.04781C64.8436 7.65863 65.8712 7.35848 66.5 6.73924"
-                                                        stroke="#3C3454"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                    />
-                                                </svg>
-                                            </span>
-                                <div class="relative mb-6 flex justify-center">
-                                    <span class="relative z-1 inline-block h-11 w-4 rounded-full bg-red"></span>
-                                    <span class="absolute left-0 top-1/2 inline-block h-2 w-full -translate-y-1/2 bg-purple-700"></span>
-                                </div>
-                                <h2 class="pb-10 text-[26px] font-bold leading-tight text-red">Link building</h2>
-                                <p class="line-clamp-3 sm:px-4">
-                                    We started journey with two potential person and decided to one mission, Empowering Your Online Presence
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h2 class="text-[26px] font-bold leading-tight text-white">2022</h2>
-                                <span class="inline-flex py-4">
-                                                <svg width="68" height="13" viewBox="0 0 68 13" fill="none">
-                                                    <path
-                                                        d="M1.5 9.42115C2.1339 9.19115 2.93393 9.80168 3.53906 9.97827C4.27529 10.1931 4.95587 10.5254 5.69652 10.7686C6.11157 10.9048 6.18473 11.0536 6.65685 11.0536C7.11159 11.0536 7.42211 11.2868 7.86713 11.2868C8.71511 11.2868 9.52964 11.4034 10.3732 11.4034C11.6129 11.4034 12.696 10.9031 13.8528 10.5613C14.9078 10.2496 16.0182 9.85082 17.1153 9.65436C18.1576 9.46772 19.119 8.87036 20.141 8.57901C22.0507 8.03454 23.8491 6.86862 25.528 5.8647C26.6188 5.21247 27.1922 4.48815 27.1922 3.24109C27.1922 2.16964 26.1154 1.95843 25.2715 1.95843C24.006 1.95843 23.1587 1.99726 22.1471 2.84592C21.7825 3.15185 21.0315 3.57016 20.7987 3.99254C20.5227 4.49339 20.3072 5.02029 20.0883 5.54728C19.7534 6.35366 19.4964 7.1771 19.4964 8.0802C19.4964 8.84445 19.9171 9.3215 20.2594 9.9394C21.1475 11.543 23.2144 11.9865 24.9163 11.9865C25.9897 11.9865 27.0659 12.0649 28.113 11.8439C29.1926 11.6161 30.3527 11.3626 31.3887 10.9953C32.5733 10.5753 33.8669 10.402 35.0064 9.86166C36.2003 9.29551 37.4706 9.04069 38.5583 8.26158C40.0402 7.20012 42.2286 6.03601 42.2286 4.0055C42.2286 3.01812 42.295 2.0952 41.6366 1.28471C41.3409 0.920675 40.5818 0.995655 40.1567 1.03207C39.5249 1.08617 39.3691 1.71714 39.1437 2.19812C38.7031 3.13821 38.7951 4.26996 38.7951 5.28815C38.7951 6.21384 38.9954 6.98921 39.2424 7.84051C39.5858 9.02436 40.1899 9.3689 41.1038 10.069C42.2351 10.9355 43.1764 10.7785 44.5045 11.1054C45.8642 11.4402 46.8454 11.52 48.2471 11.52C49.863 11.52 51.4789 11.52 53.0948 11.52C55.5694 11.52 58.2298 11.3557 60.4157 10.043C61.6097 9.32602 62.8159 8.67381 64.0663 8.04781C64.8436 7.65863 65.8712 7.35848 66.5 6.73924"
-                                                        stroke="#3C3454"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                    />
-                                                </svg>
-                                            </span>
-                                <div class="relative mb-6 flex justify-center">
-                                    <span class="relative z-1 inline-block h-11 w-4 rounded-full bg-yellow"></span>
-                                    <span class="absolute left-0 top-1/2 inline-block h-2 w-full -translate-y-1/2 bg-purple-700"></span>
-                                </div>
-                                <h2 class="pb-10 text-[26px] font-bold leading-tight text-yellow">3M users</h2>
-                                <p class="line-clamp-3 sm:px-4">
-                                    We started journey with two potential person and decided to one mission, Empowering Your Online Presence
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="rounded-2xl border-2 border-[#9199B51F] bg-white px-5 py-12 shadow-[0px_0px_80px_rgba(119,128,161,0.1)] dark:bg-transparent dark:shadow-none">
+
+            <div class="rounded-2xl border-2 border-[#9199B51F] bg-white px-5 py-12 shadow-[0px_0px_80px_rgba(119,128,161,0.1)] dark:bg-transparent dark:shadow-none bg_move">
                 <div class="mx-auto pb-16 text-center lg:w-2/3">
-                    <h4 class="mb-5 text-[26px] font-bold text-purple-700 dark:text-white">Meet our Genius battler</h4>
-                    <p class="text-lg md:text-xl">We picked best specialists that are suited just for you.</p>
+                    <h4 class="mb-5 text-[26px] font-bold text-purple-700 dark:text-white">Nos formateurs, coachs et consultants
+                    </h4>
+                    <p class="text-lg md:text-xl">« Une équipe pluridisciplinaire de formateurs, coachs et consultants pour accompagner votre croissance. »</p>
                 </div>
                 <div class="mx-auto flex max-w-[1225px] flex-wrap justify-center gap-x-24 gap-y-8 text-center">
                     <div class="group">
                         <div class="mx-auto h-36 w-36 overflow-hidden rounded-full grayscale duration-300 group-hover:grayscale-0">
-                            <img src="assets/images/testimonial-user-1.svg" alt="" class="h-full w-full object-cover" />
+                            <img src="assets/images/OwnerGhaiti_sara.png" alt="" class="h-full w-full object-cover" />
                         </div>
                         <div class="mt-5 space-y-5">
-                            <h6 class="mb-1 text-xl font-semibold text-secondary dark:text-white">Lucy Liu</h6>
-                            <span class="font-medium">Developer</span>
+                            <h6 class="mb-1 text-xl font-semibold text-secondary dark:text-white"> Dr Sara Nait Sliman
+                            </h6>
+                            <span class="font-medium"> Fondateur du Cabinet</span>
                         </div>
                     </div>
                     <div class="group">
@@ -499,8 +327,9 @@
                             <img src="assets/images/testimonial-user-2.svg" alt="" class="h-full w-full object-cover" />
                         </div>
                         <div class="mt-5 space-y-5">
-                            <h6 class="mb-1 text-xl font-semibold text-secondary dark:text-white">Sylvester Stallone</h6>
-                            <span class="font-medium">Designer</span>
+                            <h6 class="mb-1 text-xl font-semibold text-secondary dark:text-white">Nadiya
+                            </h6>
+                            <span class="font-medium">RH</span>
                         </div>
                     </div>
                     <div class="group">
@@ -537,24 +366,11 @@
 
 
 
-    <div class="relative mx-auto flex w-full max-w-[1536px] flex-col items-center justify-between gap-x-4 gap-y-10 bg-secondary px-5 py-11 dark:bg-purple-900 sm:px-16 md:mb-10 lg:flex-row xl:rounded-lg">
-        <img src="assets/images/news-latter-light.png" alt="" class="absolute left-0 top-0 flex h-full w-full object-cover dark:hidden" />
-        <img src="assets/images/news-latter-dark.png" alt="" class="absolute left-0 top-0 hidden h-full w-full object-cover dark:flex" />
-        <div class="z-1 text-center ltr:lg:text-left rtl:lg:text-right">
-            <h2 class="pb-3 text-[40px] font-extrabold leading-tight text-white">Newsletter</h2>
-            <p>Join 33,000+ others and never miss out on new tips, tutorials, and more.</p>
-        </div>
-        <div class="relative z-1 w-full max-w-md text-center">
-            <input type="text" placeholder="Enter email address" class="w-full rounded-lg border border-primary bg-transparent px-5 py-3 text-base outline-none placeholder:text-purple-500 sm:pe-36" />
-            <button type="button" class="btn end-0 top-0 mt-5 rounded-lg border border-primary py-3 sm:absolute sm:mt-0 sm:rounded-s-none">
-                            Subscribe
-                        </button>
-        </div>
-    </div>
+
     </div>
 
     <!-- Footer -->
-    <footer class="mt-auto">
+    <footer class="mt-auto bg_move">
         <div class="mx-auto max-w-[1536px]">
             <div class="flex flex-col items-center justify-between gap-6 px-4 py-8 lg:flex-row">
                 <div class="flex flex-col items-center gap-y-5 text-center md:flex-row md:text-left">
@@ -566,51 +382,37 @@
                 </div>
                 <ul class="inline-flex items-center gap-8 text-purple-400">
                     <li>
-                        <a href="javascript:" class="inline-flex duration-300 hover:scale-125 hover:text-primary">
+                        <a href="https://www.facebook.com/share/14PF9gNrCDY/" class="inline-flex duration-300 hover:scale-125 hover:text-primary">
                             <svg width="26" height="27" viewBox="0 0 26 27" fill="none">
-                                        <path
-                                            d="M26 13.5C26 6.32029 20.1797 0.5 13 0.5C5.82029 0.5 0 6.32029 0 13.5C0 19.9886 4.75389 25.3668 10.9688 26.3421V17.2578H7.66797V13.5H10.9688V10.6359C10.9688 7.37781 12.9096 5.57812 15.879 5.57812C17.3009 5.57812 18.7891 5.83203 18.7891 5.83203V9.03125H17.1498C15.535 9.03125 15.0313 10.0334 15.0313 11.0625V13.5H18.6367L18.0604 17.2578H15.0313V26.3421C21.2461 25.3668 26 19.9886 26 13.5Z"
-                                            fill="currentColor"
-                                        />
-                                    </svg>
+                                <path
+                                    d="M26 13.5C26 6.32029 20.1797 0.5 13 0.5C5.82029 0.5 0 6.32029 0 13.5C0 19.9886 4.75389 25.3668 10.9688 26.3421V17.2578H7.66797V13.5H10.9688V10.6359C10.9688 7.37781 12.9096 5.57812 15.879 5.57812C17.3009 5.57812 18.7891 5.83203 18.7891 5.83203V9.03125H17.1498C15.535 9.03125 15.0313 10.0334 15.0313 11.0625V13.5H18.6367L18.0604 17.2578H15.0313V26.3421C21.2461 25.3668 26 19.9886 26 13.5Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/ghaitievent?igsh=d293MXQ5eXkxbDhm" class="inline-flex duration-300 hover:scale-125 hover:text-primary">
+                            <svg width="26" height="27" viewBox="0 0 26 27" fill="none">
+                                <path
+                                    d="M13 2.84102C16.4734 2.84102 16.8848 2.85625 18.2508 2.91719C19.5203 2.97305 20.2059 3.18633 20.6629 3.36406C21.2672 3.59766 21.7039 3.88203 22.1559 4.33398C22.6129 4.79102 22.8922 5.22266 23.1258 5.82695C23.3035 6.28398 23.5168 6.97461 23.5727 8.23906C23.6336 9.61016 23.6488 10.0215 23.6488 13.4898C23.6488 16.9633 23.6336 17.3746 23.5727 18.7406C23.5168 20.0102 23.3035 20.6957 23.1258 21.1527C22.8922 21.757 22.6078 22.1938 22.1559 22.6457C21.6988 23.1027 21.2672 23.382 20.6629 23.6156C20.2059 23.7934 19.5152 24.0066 18.2508 24.0625C16.8797 24.1234 16.4684 24.1387 13 24.1387C9.52656 24.1387 9.11524 24.1234 7.74922 24.0625C6.47969 24.0066 5.79414 23.7934 5.33711 23.6156C4.73281 23.382 4.29609 23.0977 3.84414 22.6457C3.38711 22.1887 3.10781 21.757 2.87422 21.1527C2.69648 20.6957 2.4832 20.0051 2.42734 18.7406C2.36641 17.3695 2.35117 16.9582 2.35117 13.4898C2.35117 10.0164 2.36641 9.60508 2.42734 8.23906C2.4832 6.96953 2.69648 6.28398 2.87422 5.82695C3.10781 5.22266 3.39219 4.78594 3.84414 4.33398C4.30117 3.87695 4.73281 3.59766 5.33711 3.36406C5.79414 3.18633 6.48477 2.97305 7.74922 2.91719C9.11524 2.85625 9.52656 2.84102 13 2.84102ZM13 0.5C9.4707 0.5 9.02891 0.515234 7.64258 0.576172C6.26133 0.637109 5.31172 0.860547 4.48906 1.18047C3.63086 1.51562 2.90469 1.95742 2.18359 2.68359C1.45742 3.40469 1.01563 4.13086 0.680469 4.98398C0.360547 5.81172 0.137109 6.75625 0.0761719 8.1375C0.0152344 9.52891 0 9.9707 0 13.5C0 17.0293 0.0152344 17.4711 0.0761719 18.8574C0.137109 20.2387 0.360547 21.1883 0.680469 22.0109C1.01563 22.8691 1.45742 23.5953 2.18359 24.3164C2.90469 25.0375 3.63086 25.4844 4.48398 25.8145C5.31172 26.1344 6.25625 26.3578 7.6375 26.4188C9.02383 26.4797 9.46563 26.4949 12.9949 26.4949C16.5242 26.4949 16.966 26.4797 18.3523 26.4188C19.7336 26.3578 20.6832 26.1344 21.5059 25.8145C22.359 25.4844 23.0852 25.0375 23.8063 24.3164C24.5273 23.5953 24.9742 22.8691 25.3043 22.016C25.6242 21.1883 25.8477 20.2438 25.9086 18.8625C25.9695 17.4762 25.9848 17.0344 25.9848 13.5051C25.9848 9.97578 25.9695 9.53399 25.9086 8.14766C25.8477 6.76641 25.6242 5.8168 25.3043 4.99414C24.9844 4.13086 24.5426 3.40469 23.8164 2.68359C23.0953 1.9625 22.3691 1.51562 21.516 1.18555C20.6883 0.865625 19.7438 0.642188 18.3625 0.58125C16.9711 0.515234 16.5293 0.5 13 0.5Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M13 6.82227C9.31328 6.82227 6.32227 9.81328 6.32227 13.5C6.32227 17.1867 9.31328 20.1777 13 20.1777C16.6867 20.1777 19.6777 17.1867 19.6777 13.5C19.6777 9.81328 16.6867 6.82227 13 6.82227ZM13 17.8316C10.6082 17.8316 8.66836 15.8918 8.66836 13.5C8.66836 11.1082 10.6082 9.16836 13 9.16836C15.3918 9.16836 17.3316 11.1082 17.3316 13.5C17.3316 15.8918 15.3918 17.8316 13 17.8316Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M21.5008 6.55801C21.5008 7.42129 20.8 8.117 19.9418 8.117C19.0785 8.117 18.3828 7.41621 18.3828 6.55801C18.3828 5.69473 19.0836 4.99902 19.9418 4.99902C20.8 4.99902 21.5008 5.69981 21.5008 6.55801Z"
+                                    fill="currentColor" />
+                            </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:" class="inline-flex duration-300 hover:scale-125 hover:text-primary">
-                            <svg width="26" height="23" viewBox="0 0 26 23" fill="none">
-                                        <path
-                                            d="M8.17934 22.0623C17.9882 22.0623 23.3548 13.9337 23.3548 6.88683C23.3548 6.65832 23.3497 6.42472 23.3396 6.19621C24.3835 5.44123 25.2845 4.50609 26 3.43472C25.0277 3.8673 23.9954 4.14981 22.9384 4.27261C24.0514 3.60547 24.8847 2.55741 25.284 1.32273C24.2369 1.94325 23.0919 2.38098 21.8979 2.61714C21.0934 1.76234 20.0297 1.19636 18.8713 1.00671C17.7129 0.817051 16.5243 1.01429 15.4892 1.56792C14.4541 2.12155 13.6303 3.00075 13.145 4.06957C12.6597 5.13839 12.54 6.33732 12.8045 7.48097C10.6844 7.37458 8.61026 6.82383 6.71665 5.86442C4.82303 4.90502 3.15217 3.55837 1.81238 1.91179C1.13143 3.08583 0.923061 4.4751 1.22962 5.79725C1.53617 7.1194 2.33465 8.27522 3.46277 9.0298C2.61585 9.00291 1.78747 8.77489 1.04609 8.36457V8.43058C1.04534 9.66265 1.47127 10.857 2.2515 11.8105C3.03173 12.764 4.1181 13.4179 5.32594 13.6611C4.54139 13.8757 3.71798 13.907 2.91941 13.7525C3.26024 14.812 3.92337 15.7388 4.81625 16.4033C5.70913 17.0679 6.78721 17.4371 7.90004 17.4595C6.01079 18.9435 3.67702 19.7485 1.27461 19.7446C0.848561 19.744 0.422932 19.7179 0 19.6664C2.44059 21.2322 5.27966 22.0638 8.17934 22.0623Z"
-                                            fill="currentColor"
-                                        />
-                                    </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:" class="inline-flex duration-300 hover:scale-125 hover:text-primary">
+                        <a href="www.linkedin.com/in/ghaiti-event-7608b9348" class="inline-flex duration-300 hover:scale-125 hover:text-primary">
                             <svg width="26" height="27" viewBox="0 0 26 27" fill="none">
-                                        <path
-                                            d="M13 2.84102C16.4734 2.84102 16.8848 2.85625 18.2508 2.91719C19.5203 2.97305 20.2059 3.18633 20.6629 3.36406C21.2672 3.59766 21.7039 3.88203 22.1559 4.33398C22.6129 4.79102 22.8922 5.22266 23.1258 5.82695C23.3035 6.28398 23.5168 6.97461 23.5727 8.23906C23.6336 9.61016 23.6488 10.0215 23.6488 13.4898C23.6488 16.9633 23.6336 17.3746 23.5727 18.7406C23.5168 20.0102 23.3035 20.6957 23.1258 21.1527C22.8922 21.757 22.6078 22.1938 22.1559 22.6457C21.6988 23.1027 21.2672 23.382 20.6629 23.6156C20.2059 23.7934 19.5152 24.0066 18.2508 24.0625C16.8797 24.1234 16.4684 24.1387 13 24.1387C9.52656 24.1387 9.11524 24.1234 7.74922 24.0625C6.47969 24.0066 5.79414 23.7934 5.33711 23.6156C4.73281 23.382 4.29609 23.0977 3.84414 22.6457C3.38711 22.1887 3.10781 21.757 2.87422 21.1527C2.69648 20.6957 2.4832 20.0051 2.42734 18.7406C2.36641 17.3695 2.35117 16.9582 2.35117 13.4898C2.35117 10.0164 2.36641 9.60508 2.42734 8.23906C2.4832 6.96953 2.69648 6.28398 2.87422 5.82695C3.10781 5.22266 3.39219 4.78594 3.84414 4.33398C4.30117 3.87695 4.73281 3.59766 5.33711 3.36406C5.79414 3.18633 6.48477 2.97305 7.74922 2.91719C9.11524 2.85625 9.52656 2.84102 13 2.84102ZM13 0.5C9.4707 0.5 9.02891 0.515234 7.64258 0.576172C6.26133 0.637109 5.31172 0.860547 4.48906 1.18047C3.63086 1.51562 2.90469 1.95742 2.18359 2.68359C1.45742 3.40469 1.01563 4.13086 0.680469 4.98398C0.360547 5.81172 0.137109 6.75625 0.0761719 8.1375C0.0152344 9.52891 0 9.9707 0 13.5C0 17.0293 0.0152344 17.4711 0.0761719 18.8574C0.137109 20.2387 0.360547 21.1883 0.680469 22.0109C1.01563 22.8691 1.45742 23.5953 2.18359 24.3164C2.90469 25.0375 3.63086 25.4844 4.48398 25.8145C5.31172 26.1344 6.25625 26.3578 7.6375 26.4188C9.02383 26.4797 9.46563 26.4949 12.9949 26.4949C16.5242 26.4949 16.966 26.4797 18.3523 26.4188C19.7336 26.3578 20.6832 26.1344 21.5059 25.8145C22.359 25.4844 23.0852 25.0375 23.8063 24.3164C24.5273 23.5953 24.9742 22.8691 25.3043 22.016C25.6242 21.1883 25.8477 20.2438 25.9086 18.8625C25.9695 17.4762 25.9848 17.0344 25.9848 13.5051C25.9848 9.97578 25.9695 9.53399 25.9086 8.14766C25.8477 6.76641 25.6242 5.8168 25.3043 4.99414C24.9844 4.13086 24.5426 3.40469 23.8164 2.68359C23.0953 1.9625 22.3691 1.51562 21.516 1.18555C20.6883 0.865625 19.7438 0.642188 18.3625 0.58125C16.9711 0.515234 16.5293 0.5 13 0.5Z"
-                                            fill="currentColor"
-                                        />
-                                        <path
-                                            d="M13 6.82227C9.31328 6.82227 6.32227 9.81328 6.32227 13.5C6.32227 17.1867 9.31328 20.1777 13 20.1777C16.6867 20.1777 19.6777 17.1867 19.6777 13.5C19.6777 9.81328 16.6867 6.82227 13 6.82227ZM13 17.8316C10.6082 17.8316 8.66836 15.8918 8.66836 13.5C8.66836 11.1082 10.6082 9.16836 13 9.16836C15.3918 9.16836 17.3316 11.1082 17.3316 13.5C17.3316 15.8918 15.3918 17.8316 13 17.8316Z"
-                                            fill="currentColor"
-                                        />
-                                        <path
-                                            d="M21.5008 6.55801C21.5008 7.42129 20.8 8.117 19.9418 8.117C19.0785 8.117 18.3828 7.41621 18.3828 6.55801C18.3828 5.69473 19.0836 4.99902 19.9418 4.99902C20.8 4.99902 21.5008 5.69981 21.5008 6.55801Z"
-                                            fill="currentColor"
-                                        />
-                                    </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:" class="inline-flex duration-300 hover:scale-125 hover:text-primary">
-                            <svg width="26" height="27" viewBox="0 0 26 27" fill="none">
-                                        <path
-                                            d="M24.0754 0.5H1.91953C0.858203 0.5 0 1.33789 0 2.37383V24.6211C0 25.657 0.858203 26.5 1.91953 26.5H24.0754C25.1367 26.5 26 25.657 26 24.6262V2.37383C26 1.33789 25.1367 0.5 24.0754 0.5ZM7.71367 22.6559H3.8543V10.2449H7.71367V22.6559ZM5.78398 8.55391C4.54492 8.55391 3.54453 7.55352 3.54453 6.31953C3.54453 5.08555 4.54492 4.08516 5.78398 4.08516C7.01797 4.08516 8.01836 5.08555 8.01836 6.31953C8.01836 7.54844 7.01797 8.55391 5.78398 8.55391ZM22.1559 22.6559H18.3016V16.623C18.3016 15.1859 18.2762 13.3324 16.2957 13.3324C14.2898 13.3324 13.9852 14.9016 13.9852 16.5215V22.6559H10.1359V10.2449H13.8328V11.941H13.8836C14.3965 10.966 15.6559 9.93516 17.5297 9.93516C21.4348 9.93516 22.1559 12.5047 22.1559 15.8461V22.6559Z"
-                                            fill="currentColor "
-                                        />
-                                    </svg>
+                                <path
+                                    d="M24.0754 0.5H1.91953C0.858203 0.5 0 1.33789 0 2.37383V24.6211C0 25.657 0.858203 26.5 1.91953 26.5H24.0754C25.1367 26.5 26 25.657 26 24.6262V2.37383C26 1.33789 25.1367 0.5 24.0754 0.5ZM7.71367 22.6559H3.8543V10.2449H7.71367V22.6559ZM5.78398 8.55391C4.54492 8.55391 3.54453 7.55352 3.54453 6.31953C3.54453 5.08555 4.54492 4.08516 5.78398 4.08516C7.01797 4.08516 8.01836 5.08555 8.01836 6.31953C8.01836 7.54844 7.01797 8.55391 5.78398 8.55391ZM22.1559 22.6559H18.3016V16.623C18.3016 15.1859 18.2762 13.3324 16.2957 13.3324C14.2898 13.3324 13.9852 14.9016 13.9852 16.5215V22.6559H10.1359V10.2449H13.8328V11.941H13.8836C14.3965 10.966 15.6559 9.93516 17.5297 9.93516C21.4348 9.93516 22.1559 12.5047 22.1559 15.8461V22.6559Z"
+                                    fill="currentColor " />
+                            </svg>
                         </a>
                     </li>
                 </ul>
@@ -621,8 +423,10 @@
                         <h5 class="pb-8 font-bold text-purple-700 dark:text-white">Quick menu</h5>
                         <ul class="space-y-5 font-medium">
                             <li><a href="index.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Home</a></li>
-                            <li><a href="service-list.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Services</a></li>
-                            <li><a href="portfolio-list.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Portfolio</a></li>
+                            <li><a href="service-list.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Services</a>
+                            </li>
+                            <li><a href="portfolio-list.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Portfolio</a>
+                            </li>
                             <li><a href="blog-list.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Blog</a></li>
                         </ul>
                     </div>
@@ -630,41 +434,50 @@
                         <h5 class="pb-8 font-bold text-purple-700 dark:text-white">Company</h5>
                         <ul class="space-y-5 font-medium">
                             <li><a href="about-us.html" class="relative text-primary duration-300">About us</a></li>
-                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Help & support</a></li>
-                            <li><a href="contact-us.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Contact us</a></li>
+                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Help &
+                                    support</a></li>
+                            <li><a href="contact-us.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Contact
+                                    us</a></li>
                         </ul>
                     </div>
                     <div>
                         <h5 class="pb-8 font-bold text-purple-700 dark:text-white">About us</h5>
                         <ul class="space-y-5 font-medium">
                             <li><a href="faq.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">FAQ</a></li>
-                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Customer support</a></li>
+                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Customer
+                                    support</a></li>
                         </ul>
                     </div>
                     <div>
                         <h5 class="pb-8 font-bold text-purple-700 dark:text-white">Legal</h5>
                         <ul class="space-y-5 font-medium">
                             <li>
-                                <a href="terms-condition.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Terms & condition</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="privacy-policy.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Privacy policy</a>
+                                <a href="terms-condition.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Terms &
+                                    condition</a>
                             </li>
-                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">License</a></li>
-                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Refund policy</a></li>
+                            <li>
+                                <a href="privacy-policy.html" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Privacy
+                                    policy</a>
+                            </li>
+                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">License</a>
+                            </li>
+                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Refund
+                                    policy</a></li>
                         </ul>
                     </div>
                     <div>
                         <h5 class="pb-8 font-bold text-purple-700 dark:text-white">Plans</h5>
                         <ul class="space-y-5 font-medium">
-                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Pricing</a></li>
-                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Premium support</a></li>
+                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Pricing</a>
+                            </li>
+                            <li><a href="javascript:" class="relative start-0 duration-300 hover:start-2 hover:text-primary">Premium
+                                    support</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="px-4 py-6 text-center text-base text-purple-400">Copyright © 2023.Logoipsum. All rights reserved.</div>
+            <div class="px-4 py-6 text-center text-base text-purple-400">Copyright © 2023.Logoipsum. All rights reserved.
+            </div>
         </div>
     </footer>
     </div>
@@ -672,12 +485,12 @@
     <!-- Back To Top Arrow -->
     <div id="scrollToTopBtn" class="group fixed bottom-5 z-10 animate-bounce ltr:right-5 rtl:left-5" onclick="scrollToTop()">
         <button type="button" class="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white transition duration-300 group-hover:bg-secondary dark:group-hover:bg-purple-700">
-                <span class="h-6 w-6 transition">
-                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-full w-full">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
-                    </svg>
-                </span>
-            </button>
+            <span class="h-6 w-6 transition">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-full w-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+                </svg>
+            </span>
+        </button>
     </div>
 
     <!-- Swiper Slider Js -->
@@ -746,4 +559,4 @@
     </script>
 </body>
 
-</html>k
+</html>

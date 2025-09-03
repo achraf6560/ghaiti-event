@@ -4354,7 +4354,7 @@ content: var(--tw-content);
     }
 }
 .bg_move {
-    background: radial-gradient(circle at center, #8B7EC8 0%, #B8B4E0 50%, #E8E6F5 100%);
+    background: radial-gradient(circle at center, #8c7ec866 0%, #b8b4e0c1 50%, #E8E6F5 100%);
 }
 .resize {
     margin-top: 10px !important;
@@ -4362,4 +4362,7 @@ content: var(--tw-content);
 }
 .changeColor {
     background-color: white;
+}
+.textFaq {
+    color: rgba(0, 0, 0, 0.567) !important;
 }
